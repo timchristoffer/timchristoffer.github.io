@@ -33,11 +33,13 @@ body{
 .navigation ul{
     display: flex;
     width: 550px;
+    justify-content: space-between;
+    padding: 0 25px
 }
 
 .navigation ul li{
     position: relative;
-    width: 100px;
+    width: 150px;
     height: 100px;
     list-style: none;
     z-index: 1;
@@ -65,7 +67,7 @@ body{
 }
 
 .navigation ul li.active a .icon{
-    transform: translateY(-49px);
+    transform: translateY(-52px);
 }
 
 .navigation ul li a .text{
@@ -113,6 +115,7 @@ body{
     justify-content: center;
     align-items: center;
     transition: .5s;
+    transform: translateX(-50%); 
 }
 
 .indicatior::before{
@@ -400,6 +403,10 @@ body.light-mode .navigation{
 body.light-mode .navigation ul{
     display: flex;
     width: 550px;
+        display: flex;
+    width: 550px;
+    justify-content: space-between;
+    padding: 0 25px
 }
 
 body.light-mode .navigation ul li{
