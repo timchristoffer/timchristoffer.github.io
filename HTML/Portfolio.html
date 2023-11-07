@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <title>Tim | Home</title>
+</head>
+
+<body>
+    <header>
+        <!--Huvudmeny-->
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <i class='bx bx-home-alt-2' ></i>
+                        </span>
+                        <span class="text">Home</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class='bx bx-user'></i>
+                        </span>
+                        <span class="text">Info</span>
+                        <span class="circle"></span>
+                    </a>    
+                </li>  
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class='bx bx-message'></i>
+                        </span>
+                        <span class="text">Contact</span>
+                        <span class="circle"></span>
+                    </a>    
+                </li>  
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class='bx bx-folder' ></i>
+                        </span>
+                        <span class="text">Projects</span>
+                        <span class="circle"></span>
+                    </a>    
+                </li>  
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <i class='bx bx-link-alt' ></i>
+                        </span>
+                        <span class="text">Socials</span>
+                        <span class="circle"></span>
+                    </a>
+                </li>  
+                <div class="indicatior"></div>
+                </a>
+            </ul>
+        </div>
+        <div class="dropdown-content">
+            <div class="content active" id="home-content">
+                <h2>Hello World.</h2>
+                <p>
+                    Welcome to my corner of the digital world! I'm thrilled to have you here.
+                    This is where I showcase my journey as a .NET Developer student.
+    
+                    Whether you're here to explore my projects, learn about my experiences, or just share a tech-related conversation, I'm excited to connect with you. 
+                    Feel free to browse and discover the world of coding and innovation through my eyes.
+                    
+                    Thank you for visiting, and I look forward to sharing this exciting adventure with you.</p>
+            </div>
+            <div class="content" id="info-content">
+            <img src="Images/Me.jpg">
+                <h2>About Me.</h2>
+                <p>
+                    I'm Tim, a 25-year-old .NET Developer student from Sweden.
+    
+                    My passion for coding and technology has led me to embark on this thrilling career path.
+                    I'm dedicated to learning, adapting, and staying at the forefront of the ever-evolving tech world.
+                    
+                    In my spare time, I'm an avid F1 fan, watch enthusiast and play some video games from time to time. 
+                    
+                    Let's connect, share experiences, and make meaningful contributions to the world of .NET development.
+                    
+                    Thanks for getting to know me!
+                </p>
+            </div>
+            <div class="content" id="contact-content">
+                <h2>Contact Me.</h2>
+                <div id="contact-form" class="feature-box hidden">
+                    <form id="email-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="Option 1">General</option>
+                            <option value="Option 2">Work</option>
+                            <option value="Option 3">Fun</option>
+                        </select>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                
+                        <label for="privacy-policy" class="checkbox-label">
+                            <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                            I accept the privacy policy
+                        </label>
+                
+                        <button type="submit" class="send-button">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="content" id="projects-content">
+                <h2>Projects.</h2>
+                <p> Check out my current projects here: </p>
+                <button onclick="window.open('#', '_blank');" class="button">Project 1</button>
+                <button onclick="window.open('#', '_blank');" class="button">Project 2</button>
+                <button onclick="window.open('#', '_blank');" class="button">Project 3</button>
+                <button onclick="window.open('#', '_blank');" class="button">Project 4</button>
+            </div>
+            <div class="content" id="socials-content">
+                <div class="socials">
+                    <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+                </div>  
+            </div>
+        </div>
+
+        <!-- Dark/Light Mode-->
+        <input type="checkbox" id="dark-light-toggle" class="checkbox">
+        <!-- Väder Applikation -->
+        <!-- Klocka -->
+
+        <footer class="FCopyright">
+            ©Tim Dahl
+        </footer> 
+    
+    </header> 
+</body>
+
+    <script src="Script/script.js"></script>
+    <script src="Script/weather.js"></script>
+</html>
