@@ -392,7 +392,7 @@ button:hover{
     color: #ffffff;
     font-size: 16px;
     text-align: center;
-    width: 600px; /* Adjust the width to match dropdown-content */
+    width: 600px;
     background: linear-gradient(45deg, rgb(39, 39, 39), #141414);
     border-radius: 10px;
     padding: 10px;
@@ -401,52 +401,6 @@ button:hover{
     left: 50%;
     transform: translateX(-50%);
 }
-
-/* Weather App
-.weather-container {
-    display: flex;
-    justify-content: right;
-    text-align: center;
-    margin-right: -25%;
-    margin-top: 1.5%;
-}
-
-.weather-widget {
-    background: linear-gradient(45deg, rgb(39, 39, 39), #141414);
-    border-radius: 10px;
-    text-align: center;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.widget-header {
-    background: linear-gradient(45deg, rgb(39, 39, 39), #141414);
-    border-radius: 10px 10px 0 0;
-    padding: 10px;
-    font-weight: 600;
-}
-
-.widget-content {
-    padding: 20px;
-}
-
-.weather-icon img {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-}
-
-.temperature {
-    font-size: 36px;
-    margin: 10px 0;
-}
-
-.description {
-    font-size: 18px;
-}
-*/
 
 /* Light Mode */
 
@@ -481,8 +435,8 @@ body.light-mode .navigation ul{
 
 body.light-mode .navigation ul li{
     position: relative;
-    width: 100px; /* Ändra*/
-    height: 100px; /* Ändra*/
+    width: 100px;
+    height: 100px; 
     list-style: none;
     z-index: 1;
 }
@@ -827,7 +781,7 @@ body.light-mode #container{
     color: #554F3F;
     font-size: 16px;
     text-align: center;
-    width: 600px; /* Adjust the width to match dropdown-content */
+    width: 600px;
     background: #F0EBD8; 
     border-radius: 10px;
     padding: 10px;
