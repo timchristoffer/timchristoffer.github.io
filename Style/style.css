@@ -178,6 +178,7 @@ body{
     overflow: hidden;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
+    z-index: 1;
 }
 
 .content h2{
@@ -383,6 +384,22 @@ button:hover{
     background: linear-gradient(to bottom, #444, #222); 
     color: #fff; 
     text-align: center;
+}
+
+#container{
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    width: 600px; /* Adjust the width to match dropdown-content */
+    background: linear-gradient(45deg, rgb(39, 39, 39), #141414);
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Weather App
@@ -802,4 +819,20 @@ body.light-mode .FCopyright{
     background: #F0EBD8;
     color: #554F3F;
     text-align: center;
+}
+
+body.light-mode #container{
+    margin-top: 20px;
+    font-weight: bold;
+    color: #554F3F;
+    font-size: 16px;
+    text-align: center;
+    width: 600px; /* Adjust the width to match dropdown-content */
+    background: #F0EBD8; 
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
 }

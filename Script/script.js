@@ -25,3 +25,22 @@ darkLightToggle.addEventListener('change', () => {
     body.classList.remove('light-mode');
   }
 });
+
+// Anropar GitHub API för att hämta och uppdatera "Senaste uppdateringen gjordes"-fliken.
+const repoOwner = 'timchristoffer';
+const repoName = 'timchristoffer.github.io';
+const branch = 'main';
+
+const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/branches/${branch}`;
+
+fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        // Uppdaterar tidstampeln för senaste uppdateringen.
+        const lastUpdatedElement = document.getElementById('updateTimestamp');
+        const lastUpdatedDate = new Date(data.commit.commit.author.date);
+        lastUpdatedElement.textContent = lastUpdatedDate.toLocaleString();
+    })
+    .catch(error => {
+        console.error('Error fetching GitHub data:', error);
+    });
