@@ -13,11 +13,14 @@ html{
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 45vh;
     background: #000;
 }
+
+
 
 .navigation{
     position: relative;
@@ -28,18 +31,19 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+
 }
 
 .navigation ul{
     display: flex;
     width: 550px;
     justify-content: space-between;
-    padding: 0 25px
+    padding: 0 25px;
 }
 
 .navigation ul li{
     position: relative;
-    width: 150px;
+    width: 100px;
     height: 100px;
     list-style: none;
     z-index: 1;
@@ -67,7 +71,7 @@ body{
 }
 
 .navigation ul li.active a .icon{
-    transform: translateY(-52px);
+    transform: translateY(-49px);
 }
 
 .navigation ul li a .text{
@@ -168,6 +172,7 @@ body{
     flex-direction: column;
     position: absolute;
     margin-top: 10px;
+    margin-bottom: 20px;
     background: linear-gradient(45deg, rgb(39, 39, 39), #141414);
     border-radius: 10px;
     overflow: hidden;
@@ -244,6 +249,8 @@ button:hover{
 }
 
 #email-form {
+    max-height: 350px;
+    overflow: auto;
     color: #fff;
     font-size: 15px;
     padding: 10px;
@@ -257,7 +264,7 @@ button:hover{
 
 #email-form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #email-form input[type="text"],
@@ -269,7 +276,6 @@ button:hover{
     border-radius: 5px;
     background: linear-gradient(45deg, rgb(39, 39, 39), #141414);
     color: #fff;
-    margin-bottom: 10px;
 }
 
 #email-form select {
@@ -279,7 +285,6 @@ button:hover{
     border-radius: 5px;
     background: linear-gradient(45deg, rgb(39, 39, 39), #141414);
     color: #fff;
-    margin-bottom: 10px;
 }
 
 #email-form label.checkbox-label input[type="checkbox"] {
@@ -370,6 +375,7 @@ button:hover{
 }
 
 .FCopyright {
+    margin-top: auto;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -379,13 +385,60 @@ button:hover{
     text-align: center;
 }
 
-/* Light Mode ÄNDRA FÄRGER!!!! */
+/* Weather App
+.weather-container {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    margin-right: -25%;
+    margin-top: 1.5%;
+}
+
+.weather-widget {
+    background: linear-gradient(45deg, rgb(39, 39, 39), #141414);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.widget-header {
+    background: linear-gradient(45deg, rgb(39, 39, 39), #141414);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.widget-content {
+    padding: 20px;
+}
+
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 18px;
+}
+*/
+
+/* Light Mode */
 
 body.light-mode{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 45vh;
     background: #FFFAEB;
 }
 
@@ -403,10 +456,10 @@ body.light-mode .navigation{
 body.light-mode .navigation ul{
     display: flex;
     width: 550px;
-        display: flex;
+    display: flex;
     width: 550px;
     justify-content: space-between;
-    padding: 0 25px
+    padding: 0 25px;
 }
 
 body.light-mode .navigation ul li{
@@ -615,6 +668,8 @@ body.light-mode button:hover{
 }
 
 body.light-mode #email-form {
+    max-height: 350px;
+    overflow: auto;
     color: #554F3F;
     font-size: 15px;
     padding: 10px;
@@ -640,7 +695,6 @@ body.light-mode #email-form textarea {
     border-radius: 5px;
     background: #F0EBD8;
     color: #554F3F;
-    margin-bottom: 10px;
 }
 
 body.light-mode #email-form select {
@@ -650,7 +704,6 @@ body.light-mode #email-form select {
     border-radius: 5px;
     background: #F0EBD8;
     color: #554F3F;
-    margin-bottom: 10px;
 }
 
 body.light-mode #email-form label.checkbox-label input[type="checkbox"] {
@@ -741,11 +794,12 @@ body.light-mode .checkbox:checked::after {
 }
 
 body.light-mode .FCopyright{
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: #F0EBD8;
-        color: #554F3F;
-        text-align: center;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #F0EBD8;
+    color: #554F3F;
+    text-align: center;
 }
